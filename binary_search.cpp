@@ -18,10 +18,11 @@ int main()
     first=0;
     last=9;
     mid=(first+last)/2;
-    cout<<mid<<"\n";
-    cout<<first<<"\n";
-    cout<<last<<"\n";
-    while(mid)
+    //cout<<mid<<"\n";
+    //cout<<first<<"\n";
+    //cout<<last<<"\n";
+    
+    while(first<=last)
     {
         if(array[mid]==search)
         {
@@ -37,9 +38,6 @@ int main()
         }
         
         mid=(first+last)/2;
-        if(mid==last){
-            mid=0;
-        }
     }
     if(flag){
         cout<<"term is searched";
