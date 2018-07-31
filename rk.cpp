@@ -13,6 +13,13 @@ void printlist(struct Node *n)
         n = n->next;
     }
 }
+void push(struct Node **ref,int data)
+{
+    struct Node *new_node = (struct Node*)malloc(sizeof(struct Node));
+    new_node->data = data;
+    new_node->next = *ref;
+    *ref = new_node;
+}
 int main()
 {
     struct Node *first = NULL;
@@ -31,6 +38,10 @@ int main()
     mid->next=last;
     last->data=3;
     last->next=NULL;
+    int d;
+    cout<<"Enter data for new list";
+    cin>>d;
+    push(&first,d);
     printlist(first);
 
     return 0;
