@@ -15,7 +15,8 @@ void printlist(Node *n)
     }
 }
 
-void create(Node **first,int data){
+void create(Node **first,int data)
+{
     struct Node *new_node = (Node *)malloc(sizeof(Node *));
     new_node->data = data;
     new_node->next_node=*first;
@@ -25,9 +26,6 @@ void create(Node **first,int data){
 void append(Node *last,int data)
 {
     struct Node *new_node = (Node *)malloc(sizeof(Node *));
-    //new_node->data = data;
-    //new_node->next_node=*first;
-    //*first = new_node;
     last->next_node = new_node;
     new_node->data = data;
     new_node->next_node=NULL;
@@ -40,8 +38,9 @@ void DEL(struct Node *first)
     first->data = first->next_node->data;
     first->next_node = first->next_node->next_node;
     free(temp);
-    //first = *first->next_node;
 }
+
+
 int main()
 {
     Node *first;
