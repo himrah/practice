@@ -25,5 +25,4 @@ elif(month==11):
 elif(month==12):
     print "december"
 else:
-    print ("not a month")
-
+    print "not a month"
