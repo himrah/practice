@@ -1,4 +1,9 @@
-table = input("Enter table value ")
-for i in range(1,11):
-    #print("6 X "+str(i)+" = "+str(6*i))
-    print(int(table)*i)
+#table = int(input("Enter table value "))
+l = [2,4,43,"string",234]
+for k in range(10):  #[1,2,3,4,5,6,7,8,9,10]
+    print(k)
+   
+   # print("2 X "+str(i)+" = "+str(2*i))
+    #for i in range(k):
+    #    print(i)
+    

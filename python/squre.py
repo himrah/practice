@@ -1,6 +1,12 @@
-
 from math import *
 
-value = input("Enter a value ")
+value = int(input("Enter a value "))
+
 sq = sqrt(value)
-print sq
+
+
+print (sq)
+
+
+# round is global function
+#truck is library function
