@@ -10,7 +10,7 @@ public class Test{
         a = s.nextInt();
         System.out.print("Enter the second value");
         b = s.nextInt();
-        c = a+b;  
+        c = a+b;
 
         System.out.print("The sum is "+c);
 
