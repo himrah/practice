@@ -8,4 +8,4 @@ elif(Direction=="W"):
 elif(Direction=="E"):
     print("The Direction is East")
 else:
-    print("Their is no Direction like this")            
+    print("Their is no Direction like this")           
