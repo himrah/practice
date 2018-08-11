@@ -29,6 +29,9 @@ void append(Node *last,int data)
     last->next_node = new_node;
     new_node->data = data;
     new_node->next_node=NULL;
+    //*last = *new_node;
+    //*new_node = *last;
+    last = new_node; 
 }
 
 void DEL(struct Node *first)
@@ -46,7 +49,6 @@ int main()
     Node *first;
     Node *mid;
     Node *last;
-
     first = (Node *)malloc(sizeof(Node *));
     mid = (Node *)malloc(sizeof(Node *));
     last = (Node *)malloc(sizeof(Node *));
@@ -57,11 +59,17 @@ int main()
     last->data=1003;
     last->next_node=NULL;
     int data;
-    cout<<"Enter the data for new node ";
-    cin>>data;
-    create(&first,data);
-    //append(last,data);
-    DEL(first);
+    char ch;
+    do
+    {
+        cout<<"Enter the data for new node ";
+        cin>>data;
+        //create(&first,data);
+        append(last,data);
+        cout<<"Do you want enter more ";
+        cin>>ch;
+    }while(ch=='Y'||ch=='y');
+    //DEL(first);
     printlist(first); 
     return 0;
 }
