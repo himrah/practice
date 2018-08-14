@@ -1,0 +1,9 @@
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile /C/Users/Rahul/.ssh/id_rsa
+
+Host github-nixis
+	HostName github.com
+	User git
+	IdentityFile /C/Users/Rahul/.ssh/id_rsa_nixis
